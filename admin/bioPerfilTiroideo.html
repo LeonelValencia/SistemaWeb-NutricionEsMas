@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="./css/bioQuimicaSanguinea.css" rel="stylesheet" />
-    <title>Quimica Sanguinea</title>
+    <link href="./css/bioPerfilTiroideo.css" rel="stylesheet" />
+    <title>Perfil tiroideo</title>
 </head>
 <body>
     <header>
@@ -45,7 +45,7 @@
     </header>
     <main>
         <a href="#" class="regresar">>>> Regresar a expediente <<<</a>
-        <h1 class="titulo">Química Sanguínea</h1>
+        <h1 class="titulo">Perfil Tiroideo</h1>
         <form action="" id="formulario">
             <label for="date" class="fecha">
                 <span><img src="./assets/icons/calendar.svg" alt="fecha"></span>
@@ -60,30 +60,36 @@
 
             <div class="grid">
                 <label for="txtColesterol" class="form">
-                    <span>Glucosa en sangre:</span>
+                    <span>T4 Tiroxina Sérica:</span>
                     <input type="text" id="txtColesterol">
                 </label>
                 <label for="txtFosfata" class="form">
-                    <span>Bun Sérico:</span>
+                    <span>Hormona estimulante tiroidea sérica</span>
                     <input type="text" id="txtFosfata">
                 </label>
                 <label for="txtBilirrubina" class="form">
-                    <span>Urea Sérica:</span>
+                    <span>FT4 (Tiroxina Libre) Sérica:</span>
                     <input type="text" id="txtBilirrubina">
                 </label>
                 <label for="txtGlobulinas" class="form">
-                    <span>Creatinina Sérica:</span>
+                    <span>Yodo proteico:</span>
                     <input type="text" id="txtGlobulinas">
                 </label>
                 <label for="txtAlbumina" class="form">
-                    <span>Nitrógeno de la urea:</span>
+                    <span>T3 Triyodotironina Sérica:</span>
                     <input type="text" id="txtAlbumina">
                 </label>
                 <label for="txtRelAlbu" class="form">
-                    <span>Ácido Úrico en sangre:</span>
+                    <span>Índice de tiroxina libre:</span>
                     <input type="text" id="txtRelAlbu">
                 </label>
-                
+                <label for="txtProteinas" class="form">
+                    <span>T-Uptake (Índice de fijación de tiroxina sérica):</span>
+                    <input type="text" id="txtProteinas">
+                </label>
+                <label for="txtGGT" class="form">
+            </div>
+            <div id="archivosNota">
                 <label for="file1">
                     <img src="./assets/icons/file-image.svg" alt="icono de archivo imagen">
                     <img src="./assets/icons/file-pdf.svg" alt="icono de archivo pdf">
@@ -101,7 +107,6 @@
                     <textarea name="txtDescripcion" id="txtDescripcion"></textarea>
                 </label>
             </div>
-            
 
             <input type="submit" value="Guardar" id="btnGuardar">
         </form>
