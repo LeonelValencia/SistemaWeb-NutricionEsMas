@@ -1,0 +1,144 @@
+/* 
+1. posicionamiento
+2. modelo de caja
+3. tipografia
+4. visuales
+5. otros
+*/
+:root{
+    /* colores */
+    --first-color: #F7E7B4;
+    --first-alpha:#BED76D;
+    --slink-color:#509EE3;
+    --second-color:#161616;
+    --second-alpha-color:#A09A8D;
+    --third-color:#7C9C3C;
+    --third-alpha-color:#887D52;
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+    --gray-color: #CCCCCC;
+    --gray-light-color:#F3F3F3;
+    --gray-dark-color:#666666;
+    --title-color:#333333;
+    --text-color:#222222;
+    --third-color:#7C9C3C;
+    --forth-colorr:#3E3727;
+    --fourth-alpha-color:#846B56;
+    --fifth-color:#B1AFA0;
+    --fifth-alpha-color:#F9F3DF;
+    --verde-oscuro:#006F04;
+  }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: Bold;
+  }
+  /* menu horizontal */
+  #menu-h {
+    max-width: 100%;
+    background: var(--second-color);
+    margin: 0 auto;
+  }
+  #menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+  }
+  #menu-h a{
+    color: var(--first-color);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: var(--second-color);
+  }
+  #menu-h a:hover {
+    background: var(--slink-color);
+  }
+  #menu-h ul ul{
+    display: none;
+    position: absolute;
+  }
+  #menu-h ul li:hover ul{
+    display: block;
+  }
+  #menu-h img{
+    position: absolute;
+    left: 15px;
+    top: 2px;
+  }
+  /* menu horizontal */
+
+  .regresar {
+    color: rgba(80,158,227,1);
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+  }
+  .titulo {
+    color: var(--title-color);
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 20px;
+  }
+  /* formulario */
+  #formulario{
+    text-align: center;
+    margin: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .form{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    gap: 5px;
+  }
+  .fecha {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  #tituloPerfil {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  #txtDescripcion {
+    width: 400px;
+    height: 140px;
+    resize: none;
+  }
+  #btnGuardar{
+    width: 250px;
+    height: 60px;
+    background-color: var(--verde-oscuro);
+    border-radius: 8px;
+    color: var(--white-color);
+    margin: 15px;
+  }
+  /* formulario */
+  footer{
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    align-items: center;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
