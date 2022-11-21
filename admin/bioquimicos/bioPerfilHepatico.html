@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="./css/bioPerfilTiroideo.css" rel="stylesheet" />
-    <title>Perfil tiroideo</title>
+    <link href="../css/bioPerfilHepatico.css" rel="stylesheet" />
+    <title>Perfil hepatico</title>
 </head>
 <body>
     <header>
         <nav id="menu-h">
-            <img src="./assets/images/logo.png" alt="">
+            <img src="../assets/images/logo.png" alt="">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Mis usuarios</a>
@@ -45,10 +45,10 @@
     </header>
     <main>
         <a href="#" class="regresar">>>> Regresar a expediente <<<</a>
-        <h1 class="titulo">Perfil Tiroideo</h1>
+        <h1 class="titulo">Perfil Hepático</h1>
         <form action="" id="formulario">
             <label for="date" class="fecha">
-                <span><img src="./assets/icons/calendar.svg" alt="fecha"></span>
+                <span><img src="../assets/icons/calendar.svg" alt="fecha"></span>
                 <input type="date" id="date">
             </label>
             <br>
@@ -60,39 +60,57 @@
 
             <div class="grid">
                 <label for="txtColesterol" class="form">
-                    <span>T4 Tiroxina Sérica:</span>
+                    <span>Colesterol: </span>
                     <input type="text" id="txtColesterol">
                 </label>
                 <label for="txtFosfata" class="form">
-                    <span>Hormona estimulante tiroidea sérica</span>
+                    <span>Fosfatasa Alcalina: </span>
                     <input type="text" id="txtFosfata">
                 </label>
                 <label for="txtBilirrubina" class="form">
-                    <span>FT4 (Tiroxina Libre) Sérica:</span>
+                    <span>Bilirrubina total: </span>
                     <input type="text" id="txtBilirrubina">
                 </label>
                 <label for="txtGlobulinas" class="form">
-                    <span>Yodo proteico:</span>
+                    <span>Globulinas: </span>
                     <input type="text" id="txtGlobulinas">
                 </label>
                 <label for="txtAlbumina" class="form">
-                    <span>T3 Triyodotironina Sérica:</span>
+                    <span>Albúmina: </span>
                     <input type="text" id="txtAlbumina">
                 </label>
                 <label for="txtRelAlbu" class="form">
-                    <span>Índice de tiroxina libre:</span>
+                    <span>Rel. Albúmina/Globulina: </span>
                     <input type="text" id="txtRelAlbu">
                 </label>
                 <label for="txtProteinas" class="form">
-                    <span>T-Uptake (Índice de fijación de tiroxina sérica):</span>
+                    <span>Proteínas Totales: </span>
                     <input type="text" id="txtProteinas">
                 </label>
                 <label for="txtGGT" class="form">
-            </div>
-            <div id="archivosNota">
+                    <span>GGT: </span>
+                    <input type="text" id="txtGGT">
+                </label>
+                <label for="txtTGO" class="form">
+                    <span>T.G.O. (AST): </span>
+                    <input type="text" id="txtTGO">
+                </label>
+                <label for="txtBilirrubinaDir" class="form">
+                    <span>Bilirrubina Directa: </span>
+                    <input type="text" id="txtBilirrubinaDir">
+                </label>
+                <label for="txtTGP" class="form">
+                    <span>T.G.P. (ALT): </span>
+                    <input type="text" id="txtTGP">
+                </label>
+                <label for="txtBilirrubinaIndir" class="form">
+                    <span>Bilirrubina Indirecta: </span>
+                    <input type="text" id="txtBilirrubinaIndir">
+                </label>
+
                 <label for="file1">
-                    <img src="./assets/icons/file-image.svg" alt="icono de archivo imagen">
-                    <img src="./assets/icons/file-pdf.svg" alt="icono de archivo pdf">
+                    <img src="../assets/icons/file-image.svg" alt="icono de archivo imagen">
+                    <img src="../assets/icons/file-pdf.svg" alt="icono de archivo pdf">
                     <span>Adjuntar Imagen/PDF</span> <br>
                     <input type="file" name="" id="file1"> <br>
                     <input type="file" name="" id=""> <br>
@@ -107,6 +125,7 @@
                     <textarea name="txtDescripcion" id="txtDescripcion"></textarea>
                 </label>
             </div>
+            
 
             <input type="submit" value="Guardar" id="btnGuardar">
         </form>
