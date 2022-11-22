@@ -76,13 +76,9 @@
     top: 2px;
   }
   /* menu horizontal */
-
-  .regresar {
-    color: rgba(80,158,227,1);
-    font-size: 1.3rem;
-    display: block;
-    text-align: center;
-  }
+body {
+  text-align: center;
+}
   .titulo {
     color: var(--title-color);
     font-size: 2.4rem;
@@ -97,31 +93,47 @@
   .grid {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-around;
-    gap: 10px;
-    width: 70%;
+    justify-content:center;
+    gap: 20px;
+    width: 60%;
     margin: 0 auto;
   }
-  .form{
-    display: flex;
-    justify-content: end;
-    margin: 5px;
-    gap: 5px;
-  }
-  .fecha {
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-  #tituloPerfil {
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-  #txtDescripcion {
-    width: 400px;
-    height: 140px;
-    resize: none;
-  }
-  #btnGuardar{
+.labelPesoAlt {
+  display: flex;
+  gap: 5px;
+}
+.pesoAlt {
+  width: 70px;
+}
+table {
+  margin: 0 auto;
+  padding: 20px;
+}
+td {
+  border: var(--gray-dark-color) 1px solid;
+  color: var(--gray-dark-color);
+}
+th {
+  border: var(--gray-dark-color) 1px solid;
+  font-weight: bolder;
+  font-size: large;
+  font-stretch: 24px;
+  color: var(--black-color);
+}
+.negroLetra td{
+  color: var(--black-color);
+}
+.bien{
+  background-color: greenyellow;
+}
+.mal td{
+  background-color: red;
+  color: var(--white-color);
+}
+.masomenos{
+  background-color: orange;
+}
+  .btn{
     width: 250px;
     height: 60px;
     background-color: var(--verde-oscuro);
