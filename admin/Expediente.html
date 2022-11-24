@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="../css/estilos.css" rel="stylesheet" />
+    <link href="./css/expediente.css" rel="stylesheet" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -17,11 +17,39 @@
 <body>
     <header>
         <nav id="menu-h">
-            <img src="assets/images/logo.png" alt="">
+            <img src="../assets/images/logo.png" alt="">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="login.php">Iniciar sesion</a></li>
-                <li><a href="registro_usuario.php">Registrarme</a></li>
+                <li><a href="./indexadmin.php">Home</a></li>
+                <li><a href="#">Mis usuarios</a>
+                    <ul class="submenu">
+                        <li><a href="./agregarUsuarios2.html">Agregar nuevo</a></li>
+                        <li><a href="./UsuariosRegistrados.html">Usuarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Dieta base</a>
+                    <ul class="submenu">
+                        <li><a href="./dietas/dietaManual.html">Crear dieta</a></li>
+                        <li><a href="#">Compartir</a></li>
+                        <li><a href="#">Ver mis dietas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Citas</a>
+                    <ul class="submenu">
+                        <li><a href="./agendarCitas.html">Agregar cita</a></li>
+                        <li><a href="#">(1)Peticion de cita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Herramientas</a>
+                    <ul class="submenu">
+                        <li><a href="./calculadoraIMC.html">Calculadora IMC</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pagos</a></li>
+                <li><a href="#">Username</a>
+                    <ul class="submenu">
+                        <li><a href="./cerrarsesion.php">Cerrar sesion</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -30,9 +58,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-4">
-
-                <div class="card mb-3" style="max-width: 540px;">
+            <div class="col-4" id="informacionBasica">
+                <div class="card mb-3" style="max-width: 640px;">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="./assets/images/woman.png" class="img-fluid rounded-start" alt="...">
@@ -48,20 +75,16 @@
                                 <p class="card-text">Objetivos</p>
                                 <p class="card-text">Estatura</p>
                                 <p class="card-text">Peso Actual</p>
-
-                                <button type="button" class="btn btn-success col-md-3">Crear Dietas</button>
-                                <button type="button" class="btn btn-success col-md-4">Compartir Dietas</button>
-                                <button type="button" class="btn btn-success col-md-3">Ver Dietas</button>
-                                </p>
                             </div>
                         </div>
+                        <a href="./dietas/dietaManual.html" class="btn btn-success col-md-3">Crear Dietas</a>
+                        <a href="#" class="btn btn-success col-md-4">Compartir Dietas</a>
+                        <a href="#" class="btn btn-success col-md-3">Ver Dietas</a>
                     </div>
                 </div>
-
-
-
             </div>
-            <div class="col-4">
+
+            <div class="col-7" id="dataBasicAvan">
                 <table class="table">
                     <th>Basicos</th>
                     <tr>
@@ -70,87 +93,75 @@
                         <td> Agregar</td>
                         <td> Diagnosticos</td>
                         <td>Ver</td>
+                        <td>Agregar</td>
                     </tr>
 
                 </table>
-            </div>
-
-            <div class="col-4">
                 <table class="table">
                     <th>Avanzados</th>
                     <tr>
                         <td>Antecedentes Clinicos</td>
-                        <td>Agregar </td>
+                        <td>Ver</td>
+                        <td><a href="./antecedentesClinicos.html">Modificar</a></td>
                         <td> Historial IMC</td>
                         <td> Ver</td>
-                        <td>Agregar</td>
+                        <td><a href="./calculadoraIMC.html">Agregar</a></td>
                     </tr>
-                    <tr>
+                    <tr class="avanzadoTipo">
                         <td>Bioquimicos</td>
                     </tr>
                     <tr>
                         <td>Perfil Hepatico</td>
                         <td>Ver </td>
-                        <td> Agregar</td>
+                        <td><a href="./bioquimicos/bioPerfilHepatico.html">Agregar</a></td>
                         <td> Quimica Sanguinea</td>
                         <td>Ver</td>
-                        <td>Agregar</td>
+                        <td><a href="./bioquimicos/bioQuimicaSanguinea.html">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Perfil De Lipidos</td>
                         <td>Ver </td>
-                        <td>Agregar</td>
+                        <td><a href="./bioquimicos/bioPerfilLipidos.html">Agregar</a></td>
                         <td>Perfil Tiroideo</td>
                         <td> Ver</td>
-                        <td>Agregar</td>
+                        <td><a href="./bioquimicos/bioPerfilTiroideo.html">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Otros Estudios</td>
                         <td>Ver </td>
-                        <td>Agregar</td>
+                        <td><a href="./bioquimicos/bioOtrosEstudios.html">Agregar</a></td>
                     </tr>
-                    <tr>
-                        <td>Mediciones AntroPoMetricas</td>
+                    <tr class="avanzadoTipo">
+                        <td>Mediciones Antropométricas</td>
                     </tr>
                     <tr>
                         <td>Plieges Cutaneos</td>
                         <td>Ver</td>
-                        <td>Agregar</td>
+                        <td><a href="./antropometricos/antPlieguesCut.html">Agregar</a></td>
                         <td>Perimetros / Circunferencias</td>
                         <td>Ver</td>
-                        <td>Agregar</td>
+                        <td><a href="./antropometricos/antPerimetros.html">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Mediciones Basicas/Tallas</td>
                         <td>Ver</td>
-                        <td>Modificar</td>
+                        <td><a href="./antropometricos/antMedBasicas.html">Modificar</a></td>
                         <td>Longitudes y alturas segmentarias</td>
                         <td>Ver</td>
-                        <td>Modificar</td>
+                        <td><a href="./antropometricos/antLongitudes.html">Modificar</a></td>
                     </tr>
                     <tr>
                         <td>Diametros</td>
                         <td>Ver</td>
-                        <td>Modificar</td>
+                        <td><a href="./antropometricos/antDiametros.html">Modificar</a></td>
                     </tr>
                 </table>
             </div>
 
-
-
         </div>
-        <div class="row">
-            <div class="col-1">
-
-
-                <button type="button" class="btn btn-primary btn-lg">Modificar</button>
-
-
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-primary btn-lg">Eliminar</button>
-
-            </div>
+        <div>
+            <a href="./agregarUsuarios2.html" class="btn btn-primary btn-lg btnGuardar">Modificar</a>
+            <button type="button" class="btn btn-primary btn-lg btnGuardar">Eliminar</button>
         </div>
     </div>
 
