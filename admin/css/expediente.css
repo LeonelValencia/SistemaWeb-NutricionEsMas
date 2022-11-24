@@ -105,6 +105,9 @@
     min-width: 450px;
     background-color: var(--first-alpha);
   }
+  #btnUpdateDelete{
+    text-align: center;
+  }
   .btnGuardar{
     width: 250px;
     height: 60px;
