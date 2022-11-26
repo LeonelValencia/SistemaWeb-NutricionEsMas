@@ -65,7 +65,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="http://localhost/SistemaWeb-NutricionEsMas/css/login.css" rel="stylesheet" />
     <title>LOGIN</title>
 </head>
 <body>
@@ -82,11 +82,11 @@
     </header>   
     <main>
        
-    <h1>Bienvenido, ingrese sus datos para acceder al sistema</h1>
+    <h1 class="titulo">Bienvenido, ingrese sus datos para acceder al sistema</h1>
     <form action="#" method="POST">
         Username: <br/><input type="text" name="username"><br/>
         Password: <br/><input type="password" name="password"><br/>
-        <input type="submit" value="Iniciar sesión">
+        <input type="submit" value="Iniciar sesión" id="btnGuardar">
     </form>
     </main>
     <footer>

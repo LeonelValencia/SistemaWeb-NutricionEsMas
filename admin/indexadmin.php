@@ -8,6 +8,8 @@
             header('location ../login.php');
         }
     }
+    include ("DB/conexion.php");
+    include ("controlador/verDatos.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,15 +18,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="./css/agendarCitas.css" rel="stylesheet" />
+    <link href="./css/indexAdmin.css" rel="stylesheet" />
     <title>Index administrador</title>
 </head>
 <body>
     <header>
         <nav id="menu-h">
-            <img src="../assets/images/logo.png" alt="">
+            <img src="./assets/images/logo.png" alt="">
             <ul>
-                <li><a href="./indexadmin.php">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Mis usuarios</a>
                     <ul class="submenu">
                         <li><a href="./agregarUsuarios2.html">Agregar nuevo</a></li>
@@ -60,7 +62,7 @@
     </header>
     <main>
        <img src="./assets/images/principal.png" alt="frutas y versuras" id="imgPrincipal">
-        <h1 class="titulo">Hola bienvenido al sitio NUTRICION ES MAS</h1>
+        <h1 class="titulo">Sistema de control de Usuarios</h1>
         <section id="contactanos">
             <div id="divUbicacion">
                 <img src="./assets/icons/home.svg" alt="ubicacion">

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link href="./css/agendarCitas.css" rel="stylesheet" />
+    <title>Agendar citas</title>
+</head>
+<body>
+    <header>
+        <nav id="menu-h">
+            <img src="../assets/images/logo.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dieta base</a>
+                    <ul class="submenu">
+                        <li><a href="./historialDietas.html">Ver mis dietas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Citas</a>
+                    <ul class="submenu">
+                        <li><a href="./agendarCitas.html">Agregar cita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pagos</a></li>
+                <li><a href="#">Username</a>
+                    <ul class="submenu">
+                        <li><a href="./cerrarsesion.php">Cerrar sesion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Agendar cita</h1>
+        <form action="" id="formulario">
+            <label for="txtTituloCita" class="form">
+                <span>Titulo*</span>
+                <input type="text" id="txtTituloCita">
+            </label>
+            <br>
+
+            <label for="deDate" class="form">
+                <span>De*</span>
+                <input type="date" id="deDate">
+                <input type="time" id="deTime">
+            </label>
+            <br>
+
+            <label for="aDate" class="form">
+                <span>A*</span>
+                <input type="date" id="aDate">
+                <input type="time" id="aTime">
+            </label>
+            <br>
+
+            <label for="txtDescripcion"class="form">
+                <span>Descripción</span> <br>
+                <textarea name="txtDescripcion" id="txtDescripcion"></textarea>
+            </label>
+            <br>
+
+            <br>
+            <input type="submit" value="Guardar" id="btnGuardar">
+        </form>
+    </main>
+    <footer>
+        <h5>Sitio diseñado por equipo 6</h5>
+    </footer>
+</body>
+</html>
