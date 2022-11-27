@@ -5,54 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="../css/antMedBasicas.css" rel="stylesheet" />
+    <link href="./css/antMedBasicas.css" rel="stylesheet" />
     <title>Mediciones basicas/talla</title>
 </head>
 <body>
-    <header>
-        <nav id="menu-h">
-            <img src="../assets/images/logo.png" alt="">
-            <ul>
-                <li><a href="../indexadmin.php">Home</a></li>
-                <li><a href="#">Mis usuarios</a>
-                    <ul class="submenu">
-                        <li><a href="../agregarUsuarios2.html">Agregar nuevo</a></li>
-                        <li><a href="../UsuariosRegistrados.html">Usuarios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Dieta base</a>
-                    <ul class="submenu">
-                        <li><a href="../dietas/dietaManual.html">Crear dieta</a></li>
-                        <li><a href="../dietas/compartir.html">Compartir</a></li>
-                        <li><a href="../dietas/historialDietas.html">Ver mis dietas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Citas</a>
-                    <ul class="submenu">
-                        <li><a href="../agendarCitas.html">Agregar cita</a></li>
-                        <li><a href="#">(1)Peticion de cita</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Herramientas</a>
-                    <ul class="submenu">
-                        <li><a href="../calculadoraIMC.html">Calculadora IMC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagos</a></li>
-                <li><a href="#">Username</a>
-                    <ul class="submenu">
-                        <li><a href="../cerrarsesion.php">Cerrar sesion</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <?php include("./cabecera.php")?>
     <main>
         <a href="#" class="regresar">>>> Regresar a expediente <<<</a>
         <h1 class="titulo">Mediciones Básicas/Talla</h1>
         <form action="" id="formulario">
             <label for="date" class="fecha">
-                <span><img src="../assets/icons/calendar.svg" alt="fecha"></span>
+                <span><img src="./assets/icons/calendar.svg" alt="fecha"></span>
                 <input type="date" id="date">
             </label>
             <br>
@@ -83,8 +46,8 @@
                 </label>
 
                 <label for="file1">
-                    <img src="../assets/icons/file-image.svg" alt="icono de archivo imagen">
-                    <img src="../assets/icons/file-pdf.svg" alt="icono de archivo pdf">
+                    <img src="./assets/icons/file-image.svg" alt="icono de archivo imagen">
+                    <img src="./assets/icons/file-pdf.svg" alt="icono de archivo pdf">
                     <span>Adjuntar Imagen/PDF</span> <br>
                     <input type="file" name="" id="file1"> <br>
                     <input type="file" name="" id=""> <br>

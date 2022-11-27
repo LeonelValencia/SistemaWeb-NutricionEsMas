@@ -5,54 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="../css/bioQuimicaSanguinea.css" rel="stylesheet" />
-    <title>Quimica Sanguinea</title>
+    <link href="./css/bioPerfilHepatico.css" rel="stylesheet" />
+    <title>Perfil hepatico</title>
 </head>
 <body>
-    <header>
-        <nav id="menu-h">
-            <img src="../assets/images/logo.png" alt="">
-            <ul>
-                <li><a href="../indexadmin.php">Home</a></li>
-                <li><a href="#">Mis usuarios</a>
-                    <ul class="submenu">
-                        <li><a href="../agregarUsuarios2.html">Agregar nuevo</a></li>
-                        <li><a href="../UsuariosRegistrados.html">Usuarios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Dieta base</a>
-                    <ul class="submenu">
-                        <li><a href="../dietas/dietaManual.html">Crear dieta</a></li>
-                        <li><a href="../dietas/compartir.html">Compartir</a></li>
-                        <li><a href="../dietas/historialDietas.html">Ver mis dietas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Citas</a>
-                    <ul class="submenu">
-                        <li><a href="../agendarCitas.html">Agregar cita</a></li>
-                        <li><a href="#">(1)Peticion de cita</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Herramientas</a>
-                    <ul class="submenu">
-                        <li><a href="../calculadoraIMC.html">Calculadora IMC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagos</a></li>
-                <li><a href="#">Username</a>
-                    <ul class="submenu">
-                        <li><a href="../cerrarsesion.php">Cerrar sesion</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <?php include("./cabecera.php")?>
     <main>
         <a href="#" class="regresar">>>> Regresar a expediente <<<</a>
-        <h1 class="titulo">Química Sanguínea</h1>
+        <h1 class="titulo">Perfil Hepático</h1>
         <form action="" id="formulario">
             <label for="date" class="fecha">
-                <span><img src="../assets/icons/calendar.svg" alt="fecha"></span>
+                <span><img src="./assets/icons/calendar.svg" alt="fecha"></span>
                 <input type="date" id="date">
             </label>
             <br>
@@ -64,33 +27,57 @@
 
             <div class="grid">
                 <label for="txtColesterol" class="form">
-                    <span>Glucosa en sangre:</span>
+                    <span>Colesterol: </span>
                     <input type="text" id="txtColesterol">
                 </label>
                 <label for="txtFosfata" class="form">
-                    <span>Bun Sérico:</span>
+                    <span>Fosfatasa Alcalina: </span>
                     <input type="text" id="txtFosfata">
                 </label>
                 <label for="txtBilirrubina" class="form">
-                    <span>Urea Sérica:</span>
+                    <span>Bilirrubina total: </span>
                     <input type="text" id="txtBilirrubina">
                 </label>
                 <label for="txtGlobulinas" class="form">
-                    <span>Creatinina Sérica:</span>
+                    <span>Globulinas: </span>
                     <input type="text" id="txtGlobulinas">
                 </label>
                 <label for="txtAlbumina" class="form">
-                    <span>Nitrógeno de la urea:</span>
+                    <span>Albúmina: </span>
                     <input type="text" id="txtAlbumina">
                 </label>
                 <label for="txtRelAlbu" class="form">
-                    <span>Ácido Úrico en sangre:</span>
+                    <span>Rel. Albúmina/Globulina: </span>
                     <input type="text" id="txtRelAlbu">
                 </label>
-                
+                <label for="txtProteinas" class="form">
+                    <span>Proteínas Totales: </span>
+                    <input type="text" id="txtProteinas">
+                </label>
+                <label for="txtGGT" class="form">
+                    <span>GGT: </span>
+                    <input type="text" id="txtGGT">
+                </label>
+                <label for="txtTGO" class="form">
+                    <span>T.G.O. (AST): </span>
+                    <input type="text" id="txtTGO">
+                </label>
+                <label for="txtBilirrubinaDir" class="form">
+                    <span>Bilirrubina Directa: </span>
+                    <input type="text" id="txtBilirrubinaDir">
+                </label>
+                <label for="txtTGP" class="form">
+                    <span>T.G.P. (ALT): </span>
+                    <input type="text" id="txtTGP">
+                </label>
+                <label for="txtBilirrubinaIndir" class="form">
+                    <span>Bilirrubina Indirecta: </span>
+                    <input type="text" id="txtBilirrubinaIndir">
+                </label>
+
                 <label for="file1">
-                    <img src="../assets/icons/file-image.svg" alt="icono de archivo imagen">
-                    <img src="../assets/icons/file-pdf.svg" alt="icono de archivo pdf">
+                    <img src="./assets/icons/file-image.svg" alt="icono de archivo imagen">
+                    <img src="./assets/icons/file-pdf.svg" alt="icono de archivo pdf">
                     <span>Adjuntar Imagen/PDF</span> <br>
                     <input type="file" name="" id="file1"> <br>
                     <input type="file" name="" id=""> <br>

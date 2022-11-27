@@ -5,48 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-    <link href="../css/dietaManual.css" rel="stylesheet" />
+    <link href="./css/dietaManual.css" rel="stylesheet" />
     <title>Dieta manual</title>
 </head>
 <body>
-    <header>
-        <nav id="menu-h">
-            <img src="../assets/images/logo.png" alt="">
-            <ul>
-                <li><a href="../indexadmin.php">Home</a></li>
-                <li><a href="#">Mis usuarios</a>
-                    <ul class="submenu">
-                        <li><a href="../agregarUsuarios2.html">Agregar nuevo</a></li>
-                        <li><a href="../UsuariosRegistrados.html">Usuarios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Dieta base</a>
-                    <ul class="submenu">
-                        <li><a href="#">Crear dieta</a></li>
-                        <li><a href="./compartir.html">Compartir</a></li>
-                        <li><a href="./historialDietas.html">Ver mis dietas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Citas</a>
-                    <ul class="submenu">
-                        <li><a href="../agendarCitas.html">Agregar cita</a></li>
-                        <li><a href="#">(1)Peticion de cita</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Herramientas</a>
-                    <ul class="submenu">
-                        <li><a href="../calculadoraIMC.html">Calculadora IMC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagos</a></li>
-                <li><a href="#">Username</a>
-                    <ul class="submenu">
-                        <li><a href="../cerrarsesion.php">Cerrar sesion</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <?php include("./cabecera.php")?>
     <main>
         <h2>- Crear dieta manual y/o adjuntos (imagen/pdf)</h2>
         <form action="" id="formulario">

@@ -15,45 +15,7 @@
 </head>
 
 <body>
-    <header>
-        <nav id="menu-h">
-            <img src="../assets/images/logo.png" alt="">
-            <ul>
-                <li><a href="./indexadmin.php">Home</a></li>
-                <li><a href="#">Mis usuarios</a>
-                    <ul class="submenu">
-                        <li><a href="./agregarUsuarios2.html">Agregar nuevo</a></li>
-                        <li><a href="./UsuariosRegistrados.html">Usuarios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Dieta base</a>
-                    <ul class="submenu">
-                        <li><a href="./dietas/dietaManual.html">Crear dieta</a></li>
-                        <li><a href="./dietas/compartir.html">Compartir</a></li>
-                        <li><a href="./dietas/historialDietas.html">Ver mis dietas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Citas</a>
-                    <ul class="submenu">
-                        <li><a href="./agendarCitas.html">Agregar cita</a></li>
-                        <li><a href="#">(1)Peticion de cita</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Herramientas</a>
-                    <ul class="submenu">
-                        <li><a href="./calculadoraIMC.html">Calculadora IMC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pagos</a></li>
-                <li><a href="#">Username</a>
-                    <ul class="submenu">
-                        <li><a href="./cerrarsesion.php">Cerrar sesion</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+    <?php include("./cabecera.php")?>
     <h1 class="titulo"> EXPEDIENTE DE USUARIO</h1>
 
     <div class="container">
@@ -77,12 +39,12 @@
                                 <p class="card-text">Peso Actual</p>
                             </div>
                         </div>
-                        <a href="./dietas/dietaManual.html" class="btn btn-success col-md-3">Crear Dietas</a>
-                        <a href="./dietas/compartir.html" class="btn btn-success col-md-4">Compartir Dietas</a>
-                        <a href="./dietas/historialDietas.html" class="btn btn-success col-md-3">Ver Dietas</a>
+                        <a href="./dietaManual.php" class="btn btn-success col-md-3">Crear Dietas</a>
+                        <a href="./dietaCompartir.php" class="btn btn-success col-md-4">Compartir Dietas</a>
+                        <a href="./dietaHistorial.php" class="btn btn-success col-md-3">Ver Dietas</a>
                     </div>
                 </div>
-                <a href="./agendarCitas.html">Agregar Cita / Ver historial de citas</a>
+                <a href=".//agendarCitas.php">Agregar Cita / Ver historial de citas</a>
             </div>
 
             <div class="col-7" id="dataBasicAvan">
@@ -91,10 +53,10 @@
                     <tr>
                         <td>Peso/Medidas/Grasas</td>
                         <td>Ver </td>
-                        <td><a href="./bioquimicos/medidasGrasas.html">Agregar</a></td>
+                        <td><a href="./basicMedidasGrasas.php">Agregar</a></td>
                         <td> Diagnosticos</td>
                         <td>Ver</td>
-                        <td><a href="./bioquimicos/DiagnosticoObservaciones.html">Agregar</a></td>
+                        <td><a href="./diagnosticoObservaciones.php">Agregar</a></td>
                     </tr>
 
                 </table>
@@ -103,10 +65,10 @@
                     <tr>
                         <td>Antecedentes Clinicos</td>
                         <td>Ver</td>
-                        <td><a href="./antecedentesClinicos.html">Modificar</a></td>
+                        <td><a href="./antecedentesClinicos.php">Modificar</a></td>
                         <td> Historial IMC</td>
                         <td> Ver</td>
-                        <td><a href="./calculadoraIMC.html">Agregar</a></td>
+                        <td><a href="./calculadoraIMC.php">Agregar</a></td>
                     </tr>
                     <tr class="avanzadoTipo">
                         <td>Bioquimicos</td>
@@ -114,23 +76,23 @@
                     <tr>
                         <td>Perfil Hepatico</td>
                         <td>Ver </td>
-                        <td><a href="./bioquimicos/bioPerfilHepatico.html">Agregar</a></td>
+                        <td><a href="./bioPerfilHepatico.php">Agregar</a></td>
                         <td> Quimica Sanguinea</td>
                         <td>Ver</td>
-                        <td><a href="./bioquimicos/bioQuimicaSanguinea.html">Agregar</a></td>
+                        <td><a href="./bioQuimicaSanguinea.php">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Perfil De Lipidos</td>
                         <td>Ver </td>
-                        <td><a href="./bioquimicos/bioPerfilLipidos.html">Agregar</a></td>
+                        <td><a href="./bioPerfilLipidos.php">Agregar</a></td>
                         <td>Perfil Tiroideo</td>
                         <td> Ver</td>
-                        <td><a href="./bioquimicos/bioPerfilTiroideo.html">Agregar</a></td>
+                        <td><a href="./bioPerfilTiroideo.php">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Otros Estudios</td>
                         <td>Ver </td>
-                        <td><a href="./bioquimicos/bioOtrosEstudios.html">Agregar</a></td>
+                        <td><a href="./bioOtrosEstudios.php">Agregar</a></td>
                     </tr>
                     <tr class="avanzadoTipo">
                         <td>Mediciones Antropométricas</td>
@@ -138,30 +100,30 @@
                     <tr>
                         <td>Plieges Cutaneos</td>
                         <td>Ver</td>
-                        <td><a href="./antropometricos/antPlieguesCut.html">Agregar</a></td>
+                        <td><a href="./antPlieguesCut.php">Agregar</a></td>
                         <td>Perimetros / Circunferencias</td>
                         <td>Ver</td>
-                        <td><a href="./antropometricos/antPerimetros.html">Agregar</a></td>
+                        <td><a href="./antPerimetros.php">Agregar</a></td>
                     </tr>
                     <tr>
                         <td>Mediciones Basicas/Tallas</td>
                         <td>Ver</td>
-                        <td><a href="./antropometricos/antMedBasicas.html">Modificar</a></td>
+                        <td><a href="./antMedBasicas.php">Modificar</a></td>
                         <td>Longitudes y alturas segmentarias</td>
                         <td>Ver</td>
-                        <td><a href="./antropometricos/antLongitudes.html">Modificar</a></td>
+                        <td><a href="./antLongitudes.php">Modificar</a></td>
                     </tr>
                     <tr>
                         <td>Diametros</td>
                         <td>Ver</td>
-                        <td><a href="./antropometricos/antDiametros.html">Modificar</a></td>
+                        <td><a href="./antDiametros.php">Modificar</a></td>
                     </tr>
                 </table>
             </div>
 
         </div>
         <div id="btnUpdateDelete">
-            <a href="./agregarUsuarios2.html" class="btn btn-primary btn-lg btnGuardar">Modificar</a>
+            <a href="./agregarUsuario.php" class="btn btn-primary btn-lg btnGuardar">Modificar</a>
             <button type="button" class="btn btn-primary btn-lg btnGuardar">Eliminar</button>
         </div>
     </div>
