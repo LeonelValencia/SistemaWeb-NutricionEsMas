@@ -46,6 +46,7 @@
   #menu-h {
     width: 100%;
     background: var(--second-color);
+    top: 0;
     position: fixed;
     margin: 0 auto;
   }
@@ -101,6 +102,10 @@
     border-radius: 8px;
     color: var(--white-color);
     margin: 25px;
+  }
+  #formulario{
+    text-align: center;
+    margin: 20px;
   }
   /* formulario */
   .alerta{

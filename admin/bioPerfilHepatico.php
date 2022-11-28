@@ -28,7 +28,7 @@
             <div class="grid">
                 <label for="txtColesterol" class="form">
                     <span>Colesterol: </span>
-                    <input type="text" id="txtColesterol">
+                    <input type="number" id="txtColesterol">
                 </label>
                 <label for="txtFosfata" class="form">
                     <span>Fosfatasa Alcalina: </span>

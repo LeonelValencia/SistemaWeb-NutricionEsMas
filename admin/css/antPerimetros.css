@@ -123,6 +123,12 @@ main{
   .inputTxt {
     height: 25px;
   }
+  #archivosNota {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px;
+  }
   #txtDescripcion {
     width: 400px;
     height: 140px;

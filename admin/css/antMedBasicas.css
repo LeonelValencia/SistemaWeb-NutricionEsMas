@@ -121,6 +121,12 @@
     height: 140px;
     resize: none;
   }
+  #archivosNota {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px;
+  }
   #btnGuardar{
     width: 250px;
     height: 60px;

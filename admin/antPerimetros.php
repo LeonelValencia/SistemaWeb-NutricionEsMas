@@ -84,25 +84,13 @@
                     <span>Tobillo (Parte Mínima):</span>
                     <input type="text" id="txtTobillo" class="inputTxt">
                 </label>
-                
-                <label for="file1">
-                    <img src="./assets/icons/file-image.svg" alt="icono de archivo imagen">
-                    <img src="./assets/icons/file-pdf.svg" alt="icono de archivo pdf">
-                    <span>Adjuntar Imagen/PDF</span> <br>
-                    <input type="file" name="" id="file1"> <br>
-                    <input type="file" name="" id=""> <br>
-                    <input type="file" name="" id=""> <br>
-                    <input type="file" name="" id=""> <br>
-                    <input type="file" name="" id=""> <br>
-                    <input type="file" name="" id=""> <br>
-                </label>
-    
+            </div>
+            <div id="archivosNota">
                 <label for="txtDescripcion">
                     <span>Notas</span> <br>
                     <textarea name="txtDescripcion" id="txtDescripcion"></textarea>
                 </label>
             </div>
-            
 
             <input type="submit" value="Guardar" id="btnGuardar">
         </form>
