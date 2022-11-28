@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2022 a las 04:51:28
+-- Tiempo de generación: 28-11-2022 a las 06:10:30
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -20,6 +20,87 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bdnutricion`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `antecedentesclinicos`
+--
+
+CREATE TABLE `antecedentesclinicos` (
+  `id` int(11) NOT NULL,
+  `idUsuario` int(11) NOT NULL,
+  `diabetes` tinyint(1) NOT NULL,
+  `diabetesNota` varchar(100) NOT NULL,
+  `sobrepeso` tinyint(1) NOT NULL,
+  `sobrepesoNota` varchar(100) NOT NULL,
+  `tiroides` tinyint(1) NOT NULL,
+  `tiroidesNota` varchar(100) NOT NULL,
+  `presionArterial` tinyint(1) NOT NULL,
+  `presionArterialNota` varchar(100) NOT NULL,
+  `oncologico` tinyint(1) NOT NULL,
+  `oncologicoNota` varchar(100) NOT NULL,
+  `OtrosHeredo` varchar(100) NOT NULL,
+  `tabaquismo` tinyint(1) NOT NULL,
+  `tabaquismoNota` varchar(100) NOT NULL,
+  `alcoholismo` tinyint(1) NOT NULL,
+  `alcoholismoNota` varchar(100) NOT NULL,
+  `deportes` tinyint(1) NOT NULL,
+  `deportesNota` varchar(100) NOT NULL,
+  `sinEntrenar` varchar(50) NOT NULL,
+  `sinEntrenarNota` varchar(100) NOT NULL,
+  `otrosNoPato` varchar(100) NOT NULL,
+  `alergias` tinyint(1) NOT NULL,
+  `alergiasNota` varchar(100) NOT NULL,
+  `presionArtPato` tinyint(1) NOT NULL,
+  `presionArtPatoNota` varchar(100) NOT NULL,
+  `constipacion` tinyint(1) NOT NULL,
+  `constipacionNota` varchar(100) NOT NULL,
+  `retencionLiq` tinyint(1) NOT NULL,
+  `retencionLiqNota` varchar(100) NOT NULL,
+  `quirurgico` tinyint(1) NOT NULL,
+  `quirurgicoNota` varchar(100) NOT NULL,
+  `endocrinopatias` tinyint(1) NOT NULL,
+  `endocrinopatiasNota` varchar(100) NOT NULL,
+  `gastritis` tinyint(1) NOT NULL,
+  `gastritisNota` varchar(100) NOT NULL,
+  `colitis` tinyint(1) NOT NULL,
+  `colitisNota` varchar(100) NOT NULL,
+  `hemorroides` tinyint(1) NOT NULL,
+  `hemorroidesNota` varchar(100) NOT NULL,
+  `hepatitis` tinyint(1) NOT NULL,
+  `hepatitisNota` varchar(100) NOT NULL,
+  `diabetesPato` tinyint(1) NOT NULL,
+  `diabetesPatoNota` varchar(100) NOT NULL,
+  `tratamientos` tinyint(1) NOT NULL,
+  `tratamientosNota` varchar(100) NOT NULL,
+  `otrosPato` varchar(100) NOT NULL,
+  `encamado` tinyint(1) NOT NULL,
+  `encamadoNota` varchar(100) NOT NULL,
+  `ambulatorio` tinyint(1) NOT NULL,
+  `ambulatorioNota` varchar(100) NOT NULL,
+  `inanicion` tinyint(1) NOT NULL,
+  `inanicionNota` varchar(100) NOT NULL,
+  `postquirurgico` tinyint(1) NOT NULL,
+  `postquirurgicoNota` varchar(100) NOT NULL,
+  `peritonitis` tinyint(1) NOT NULL,
+  `peritonitisNota` varchar(100) NOT NULL,
+  `fractura` tinyint(1) NOT NULL,
+  `fracturaNota` varchar(100) NOT NULL,
+  `cancer` tinyint(1) NOT NULL,
+  `cancerNota` varchar(100) NOT NULL,
+  `infeccion` tinyint(1) NOT NULL,
+  `infeccionNota` varchar(100) NOT NULL,
+  `trauma` tinyint(1) NOT NULL,
+  `traumaNota` varchar(100) NOT NULL,
+  `quemadura10` tinyint(1) NOT NULL,
+  `quemadura10Nota` varchar(100) NOT NULL,
+  `quemadura30` tinyint(1) NOT NULL,
+  `quemadura30Nota` varchar(100) NOT NULL,
+  `quemadura50` tinyint(1) NOT NULL,
+  `quemaduraNota` varchar(100) NOT NULL,
+  `otrosFactor` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -427,6 +508,13 @@ INSERT INTO `usuarios` (`idUsuario`, `username`, `password`, `nombres`, `apellid
 --
 
 --
+-- Indices de la tabla `antecedentesclinicos`
+--
+ALTER TABLE `antecedentesclinicos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idUsuarioAntec` (`idUsuario`);
+
+--
 -- Indices de la tabla `antlongitudes`
 --
 ALTER TABLE `antlongitudes`
@@ -556,6 +644,12 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `antecedentesclinicos`
+--
+ALTER TABLE `antecedentesclinicos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `antlongitudes`
 --
 ALTER TABLE `antlongitudes`
@@ -660,6 +754,12 @@ ALTER TABLE `usuarios`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `antecedentesclinicos`
+--
+ALTER TABLE `antecedentesclinicos`
+  ADD CONSTRAINT `idUsuarioAntec` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idUsuario`);
 
 --
 -- Filtros para la tabla `antlongitudes`
