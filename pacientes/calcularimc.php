@@ -1,23 +1,4 @@
-<?php
- $peso = $_POST['peso'];
-  $estatura = $_POST['estatura'];
 
-$imc = $peso/($estatura^2);
-
-if($imc < 18.5){
- echo 'Hola su IMC es'.$imc.'<br>';
-  echo '<h3>Esta por debajo del peso</h3>';
-}elseif($imc > 18.5 && $imc < 24.9){
-echo 'Hola su IMC es'.$imc.'<br>';
-  echo '<h3>su nivel es normal</h3>';
-}elseif($imc > 24.9 && $imc < 30){
-echo 'Hola su IMC es'.$imc.'<br>';
-  echo '<h3>Esta en sobrepeso</h3>';
-}elseif ($imc > 30){
-  echo 'Hola su IMC es'.$imc.'<br>';
-  echo '<h3>Esta en obesidad</h3>';
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +43,26 @@ echo 'Hola su IMC es'.$imc.'<br>';
          <input type="submit" value="calcular">
       <br></br>
   </form>
+ <?php
+ $peso = $_POST['peso'];
+  $estatura = $_POST['estatura'];
+
+$imc = $peso/($estatura^2);
+
+if($imc < 18.5){
+ echo 'Hola su IMC es'.$imc.'<br>';
+  echo '<h3>Esta por debajo del peso</h3>';
+}elseif($imc > 18.5 && $imc < 24.9){
+echo 'Hola su IMC es'.$imc.'<br>';
+  echo '<h3>su nivel es normal</h3>';
+}elseif($imc > 24.9 && $imc < 30){
+echo 'Hola su IMC es'.$imc.'<br>';
+  echo '<h3>Esta en sobrepeso</h3>';
+}elseif ($imc > 30){
+  echo 'Hola su IMC es'.$imc.'<br>';
+  echo '<h3>Esta en obesidad</h3>';
+}
+?>
     </main>
     <footer>
         <h5>Sitio diseñado por equipo 6</h5>
