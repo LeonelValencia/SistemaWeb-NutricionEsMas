@@ -35,7 +35,7 @@
         $row = $query->fetch(PDO::FETCH_NUM);
         
         if($row == true){
-            $rol = $row[5];
+            $rol = $row[7];
             
             $_SESSION['rol'] = $rol;
             switch($rol){
@@ -69,17 +69,7 @@
     <title>LOGIN</title>
 </head>
 <body>
-    <header>
-        <nav id="menu-h">
-            
-            <ul>
-            <img src="assets/images/logo.png" alt="">
-                <li><a href="index.php">Home</a></li>   
-                <li><a href="#">Iniciar sesion</a></li>
-                <li><a href="registro_usuario.php"> Registrarme</a></li>
-            </ul>
-        </nav>
-    </header>   
+    <?php include("./cabecera.php")?>
     <main>
        
     <h1 class="titulo">Bienvenido, ingrese sus datos para acceder al sistema</h1>
@@ -89,8 +79,6 @@
         <input type="submit" value="Iniciar sesión" id="btnGuardar">
     </form>
     </main>
-    <footer>
-        <h5>Sitio diseñado por equipo 6</h5>
-    </footer>
+    <?php include("./pie.php")?>
 </body>
 </html>

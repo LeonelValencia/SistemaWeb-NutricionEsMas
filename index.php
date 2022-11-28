@@ -9,16 +9,7 @@
     <title>INICIO</title>
 </head>
 <body>
-    <header>
-        <nav id="menu-h">
-            <img src="assets/images/logo.png" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>   
-                <li><a href="login.php">Iniciar sesion</a></li>
-                <li><a href="registro_usuario.php">Registrarme</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include("./cabecera.php")?>
     <main>
        <img src="./assets/images/principal.png" alt="frutas y versuras" id="imgPrincipal">
         <h1 class="titulo">Hola bienvenido al sitio NUTRICION ES MAS</h1>
@@ -48,8 +39,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <h5>Sitio diseñado por equipo 6</h5>
-    </footer>
+    <?php include("./pie.php")?>
 </body>
 </html>

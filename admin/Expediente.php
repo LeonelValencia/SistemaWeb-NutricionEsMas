@@ -1,3 +1,9 @@
+<?php 
+    $idUser= $_GET['id'];
+    include ("DB/conexion.php");
+    $con=new Conexion();
+    $resultado= $con->consultar("SELECT u.nombres,u.apellidoP,d.* FROM datosbasicos as d INNER JOIN usuarios as u ON d.idUsuario=u.idUsuario WHERE d.idUsuario=$idUser;");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +22,8 @@
 
 <body>
     <?php include("./cabecera.php")?>
-    <h1 class="titulo"> EXPEDIENTE DE USUARIO</h1>
+    <?php foreach($resultado as $cliente){ ?>
+    <h1 class="titulo"> EXPEDIENTE DE <?php echo($cliente['nombres']." ".$cliente['apellidoP']); ?></h1>
 
     <div class="container">
         <div class="row">
@@ -27,17 +34,17 @@
                             <img src="./assets/images/woman.png" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
+                        
                             <div class="card-body">
                                 <h5 class="card-title">INFORMACION BASICA</h5>
-                                <p class="card-text">Numero De Usuario:</p>
-                                <p class="card-text">Fecha De Nacimiento:</p>
-                                <p class="card-text">Actividad Fisica:</p>
-                                <p class="card-text">Peso Inicial</p>
-                                <p class="card-text">Usuario Registrado</p>
-                                <p class="card-text">Objetivos</p>
-                                <p class="card-text">Estatura</p>
-                                <p class="card-text">Peso Actual</p>
+                                <p class="card-text">Fecha De Nacimiento: <?php echo($cliente['nacimiento']); ?></p>
+                                <p class="card-text">Actividad Fisica: <?php echo($cliente['actividadFisica']); ?></p>
+                                <p class="card-text">Peso Inicial: <?php echo($cliente['pesoI']); ?> kilos</p>
+                                <p class="card-text">Objetivos: <?php echo($cliente['objetivos']); ?></p>
+                                <p class="card-text">Estatura: <?php echo($cliente['estatura']); ?> cms</p>
+                                <p class="card-text">Peso Actual: Sin registro</p>
                             </div>
+    <?php } ?>
                         </div>
                         <a href="./dietaManual.php" class="btn btn-success col-md-3">Crear Dietas</a>
                         <a href="./dietaCompartir.php" class="btn btn-success col-md-4">Compartir Dietas</a>
@@ -123,8 +130,8 @@
 
         </div>
         <div id="btnUpdateDelete">
-            <a href="./agregarUsuario.php" class="btn btn-primary btn-lg btnGuardar">Modificar</a>
-            <button type="button" class="btn btn-primary btn-lg btnGuardar">Eliminar</button>
+            <a href="./modificarUsuario.php?id=<?php echo($idUser); ?>" class="btn btn-primary btn-lg btnGuardar">Modificar</a>
+            <a href="./eliminarUsuario.php?id=<?php echo($idUser); ?>" class="btn btn-primary btn-lg btnGuardar">Eliminar</a>
         </div>
     </div>
 

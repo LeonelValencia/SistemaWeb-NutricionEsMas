@@ -1,7 +1,7 @@
 <?php
     include ("DB/conexion.php");
     $con=new Conexion();
-    $resultado= $con->consultar("SELECT * FROM `usuarios` WHERE rol_id=2");
+    $resultado= $con->consultar("SELECT u.idUsuario,u.nombres,u.apellidoP,d.pesoI,d.objetivos FROM datosbasicos as d INNER JOIN usuarios as u ON d.idUsuario=u.idUsuario;");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,11 +30,12 @@
                 <?php foreach($resultado as $cliente){ ?>
                 <div class="card" style="width: 18rem; margin: 20px"> <img src="./assets/images/woman.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo($cliente['nombres']); ?></h5>
-                        <p class="card-text">OBJETIVO: Perder Peso.</p>
-                        <p class="card-text">PESO INICIAL: 80 kilos.</p>
+                        <h5 class="card-title"><?php echo($cliente['nombres']." ".$cliente['apellidoP']); ?></h5>
+                        <p class="card-text">OBJETIVO: <?php echo($cliente['objetivos']); ?> </p>
+                        <p class="card-text">PESO INICIAL: <?php echo($cliente['pesoI']); ?> kilos.</p>
                         <p class="card-text">PESO ACTUAL: SIN REGISTRO.</p>
-                        <a href="./Expediente.php" class="btn btn-primary">Ver Expediente</a>
+                        
+                        <a href="./Expediente.php?id=<?php echo($cliente['idUsuario']); ?>" class="btn btn-primary">Ver expediente</a>
                     </div>
                 </div>
                 <?php } ?>
