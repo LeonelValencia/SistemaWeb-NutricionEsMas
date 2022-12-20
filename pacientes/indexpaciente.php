@@ -35,7 +35,7 @@
                         <li><a href="./agendarCitas.html">Agregar cita</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Pagos</a></li>
+                <li><a href="calcularimc.php">Calcular IMC</a></li>
                 <li><a href="#">Username</a>
                     <ul class="submenu">
                         <li><a href="./cerrarsesion.php">Cerrar sesion</a></li>

@@ -78,6 +78,7 @@
         Password: <br/><input type="password" name="password"><br/>
         <input type="submit" value="Iniciar sesión" id="btnGuardar">
     </form>
+        <ul><a href="recuperar.php">Recuperar contraseña</a></ul>
     </main>
     <?php include("./pie.php")?>
 </body>
