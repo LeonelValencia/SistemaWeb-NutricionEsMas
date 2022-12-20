@@ -27,7 +27,6 @@
                     <li><a href="./calculadoraIMC.php">Calculadora IMC</a></li>
                 </ul>
             </li>
-            <li><a href="#">Pagos</a></li>
             <li><a href="#">Administrador</a>
                 <ul class="submenu">
                     <li><a href="./cerrarsesion.php">Cerrar sesion</a></li>

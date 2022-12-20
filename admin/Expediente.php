@@ -51,7 +51,7 @@
                         <a href="./dietaHistorial.php" class="btn btn-success col-md-3">Ver Dietas</a>
                     </div>
                 </div>
-                <a href=".//agendarCitas.php">Agregar Cita / Ver historial de citas</a>
+                <a href="./agendarCitas.php?id=<?php echo($idUser); ?>" class="btn btn-success col-md-4">Agregar Cita</a>
             </div>
 
             <div class="col-7" id="dataBasicAvan">

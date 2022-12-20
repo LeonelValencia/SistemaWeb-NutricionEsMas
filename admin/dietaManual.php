@@ -48,7 +48,6 @@
 
             <input type="submit" value="Guardar" id="btnGuardar">
         </form>
-        <h2><a href="#">- Crear dieta desde sistema </a></h2>
     </main>
     <footer>
         <h5>Sitio diseñado por equipo 6</h5>
